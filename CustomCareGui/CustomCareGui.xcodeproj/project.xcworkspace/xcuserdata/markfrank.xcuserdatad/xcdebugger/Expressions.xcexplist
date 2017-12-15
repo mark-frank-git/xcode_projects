@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CsvReader::readCsvFile(char const*):CsvReader.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_protocols">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProgramUnitController setAppDelegate:]:ProgramUnitController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "patient">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate getNewProtocols]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "patients">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate insertPatient:after:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "patients">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProtocolBankController selectAndExit:]:ProtocolBankController.mm">
+      </ContextState>
+      <ContextState
+         contextName = "-[ProtocolEditorController setProgramsController]:ProtocolEditorController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate tableViewSelectionDidChange:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "patients">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate addNewPatient:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "patients">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

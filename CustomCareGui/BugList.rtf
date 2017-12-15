@@ -1,0 +1,156 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue120;\red234\green234\blue234;\red43\green39\blue19;
+\red37\green127\blue159;}
+\margl1440\margr1440\vieww20700\viewh18300\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 List of Bugs\
+0. When Xcode is updated, copy C++/boost_1_57_0/boost to Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/boost\
+1. When editing patient (or mode?) in the separate window, we can select a different patient or mode in the main window, and the results may not be consistent? - Done?\
+2. Does hitting the X to close a window save the info? - Done\
+3. Error checking on reading xml files - Done\
+4. Saving all patients - Done\
+5. Reading all patients\
+6. Protocols from bank start counting at 0\
+7. Need to add mode title second line 16 chars + 16 chars\
+Protocol Name - Protocol Note - Additional Instructions\
+8. Printing\
+* Print Just names in protocol bank - Done\
+* Print Programs details of all protocols in protocol bank - Done\
+* Print Prescription all protocols for a single patient\
+* Print Programs details of all protocols\
+9. Modifying protocol bank\
+* Standard\
+* User\
+10. Load Bank From File instead of \'93Load Protocol Bank\'94\
+11. When the protocols are re-ordered then the programming is still in the same order\
+12 Print panel doesn\'92t work from Mode Bank when other prints have been opened?\
+13 Copy and paste programs from editing protocols\
+14. Have a no expiration check box instead of setting max hours and minutes to zero\
+Remove max hours and minutes\
+15. Blank fields in Programs causes hang ups?  Use Strings instead of Numbers\
+Also, check on max treatment hours??\
+16 Reading SK-WH, the gentles don\'92t show up\
+17. Registering with Apple App\
+* 30%??\
+18 Default protocol (new name, add instruction, add note)\
+19. Fix protocol names, remove trailing \'91-\'91\
+20. Write bank to file (CsvWriter)\
+21. When editing protocols without exiting the protocol editor window, and then switch to another protocol, seems to add on to end of list?\
+22. In Protocol Editor, add \'93Select All\'94 button\
+23. Add total duration counter for protocols, also remove \'93Insertion Type\'94\
+24. Default reading all patients\
+25. Hitting X in protocol editor window should ask if you want to save edits\
+26. Add NSUserDefaults for protocol bank file\
+27. Add NSUserDefaults for protocol bank editor\
+28. Hitting X/close in protocol bank editor should ask if you want to save edits\
+29. Handle tabs in protocol bank editor table (tab to new row)\
+30. Loading a protocol bank, and then another tacks it on the end?\
+31. Can\'92t change wave shape and polarity in protocol editor.\
+32. If you modify a protocol in the bank, it should go from Standard to User\
+33. Check for zero frequencies, Check for min frequency > 0.1 Hz? etc.  in programs\
+34. Check for max frequency, min/max current\
+35. Check for serial port driver not installed versus USB not plugged in, check for System/Library/Extensions/ProlificUsbSerial.kext\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+bool\cf4  b=[[\cf5 NSFileManager\cf4  defaultManager] fileExistsAtPath:filePath];
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 36. When adding a protocol from the bank with no patient loaded, it crashes.\
+36.1 Do a better job distinguishing protocol bank editor from protocol band add file.  E.g., change the window title (\'93Adding Protocol for John Doe\'94).\
+36.1 Ask to save protocol file when exiting modify protocol bank.\
+36.2 When protocol bank editor exits with a save, use this as new default protocol.\
+37. When adding a protocol in the protocol bank editor, automatically scroll down to the bottom, so the user can see the new protocol.  Do this in all editors?\
+37.1 Allow the programming of the unit to be cancelled (separate thread).\
+37.2 Load bank from file doesn\'92t save as default bank\
+37.6 When save a protocol bank, put the old name into the save panel.\
+37.7 When saving a protocol bank, automatically add .csv extension (works on mini??).\
+37.6 When editing patient info, editing the patient, and then turning off \'93No Expiration\'94 restores the patient info\
+37.7 When editing the patient, the edits go directly in, and you can\'92t discard them - I think this is fixed now.\
+37.8 Remove McMakin and other info from patient editing\
+37.9 When closing Patient Editor, ask, \'93Do you want to save\'94\
+37.91 When saving protocol bank, the \'93User Defined\'94 doesn\'92t get saved.\
+37.92 Modifying protocol bank, dirties list of patients\
+37.93 Discard -> Discard Changes\
+37.94 Arrow keys to work in tables to move to next cell - works up and down when not in a text cell\
+37.95 When adding a program in protocol editor, make sure it scrolls down to new program (set selected row?)\
+37.96 If I do a File Save All Patients, the dirty flag is still set\
+38.0 Check for number of programs <= 99, this could be done in the programming unit, and warn the user that only the first 99 will be written\
+38.1 \expnd0\expndtw0\kerning0
+When I program the unit, the first attempt takes approximately 1.5 minutes, but it erases the files leaving the first program (from a previous installation) only on the unit.\
+\pard\pardeftab720\partightenfactor0
+\cf0 If I completely exit and then return and try another time, it will take 15 minutes (yes...that is long), but will successfully install. \'a0\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 38.2 Check for no programs when programming the unit\
+38.3 When doing a select all - copy from the protocol editor, it sets the dirty flag. - This may work\
+38.4 When editing in the protocol editor, and we discard changes, the list of patients is set to dirty\
+38.40 When editing a protocol, and then saving a protocol, I was not asked to save the patients?\
+(I think this is fixed, need to check).\
+38.41 When moving to El Capitan, /dev/cu.KeySerial1 was deleted, but program did not detect this.\
+(I think this is fixed need to check).\
+38.42 When modifying the protocol bank, and then \'93Close Window\'94, and if you select \'93Cancel Close\'94, it exits the protocol editor.\
+\
+38.44 When editing in the protocol editor, the frequencies aren\'92t centered.\
+\
+38.5 If you start up with no previous patient file, and try to add a protocol from the bank, it gives an error, but might\
+be still messed up.  Try this from another account.\
+\
+38.6 When editing a protocol, and then opening another at the same time, will it save the edits of the original?\
+\
+39. Check that moving a file (patient or csv) from a default location doesn\'92t crash during start up.\
+\
+40. When adding a new patient, use \'93Last\'94, \'93First\'94, and Note = blank\
+\
+41. Add a print protocol from Protocol Editor window.\
+\
+42. Check for \'93<\'93 and \'93>\'94 entered into patient data doesn\'92t mess up patient save/recall.\
+\
+43. Add New App Icon - Adobe photo shop elements\
+\
+44. When copying and pasting, or other editing in the protocol editor, the numbers can get off-centered.\
+\
+45. When running save or open panel, try to expand the panel to show files programmatically.\
+\
+46. Install Driver System/Library/Extensions - From a bundle, resources, use kextload\
+\
+47. Save all patients or save patient may not automatically tack on xml extension (at least on MacBook?)\
+\
+48. Install Application - Code signing issues\
+\
+49. Tabbing doesn\'92t work in protocol editor on MacBook?  Works on mini?\
+\
+50. Test max treatment hours, expiration date - PDI need mac mini?\
+\
+51. Improve program status bar estimate\
+\
+52. Windows port/computer. - Windows 7 or 8?\
+\
+53. XML vs JSON? Adam?\
+\
+54. Can\'92t delete patient??\
+\
+55. Add converter program from FoxPro data base to csv\
+\
+56. When saving a protocol bank to a new file name, that new file name doesn\'92t get saved for the next save.\
+\
+57. When changing the name of a protocol in the protocol bank editor, change it from Standard to User Defined\
+\
+37.3 Try programming the unit when the mac goes into sleep.\
+\
+\
+\
+9, 24, 56, 63, 78, 96, 119, 161, 178\
+\
+CTF 40/562, 13/443, 13/10 grouped together\
+http://www.embracewellnesscenter.com/wp-content/uploads/2015/12/EWNewPatientIntake.pdf\
+\
+http://go.thrv.me/aff_c?offer_id=6&aff_id=8400\
+<a href="http://go.thrv.me/aff_c?offer_id=6&aff_id=8400"></a>\
+\
+\
+\
+\
+\
+}

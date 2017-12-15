@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D0168AA1A64DCFA00419A32 /* CppProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D0168A81A64DCFA00419A32 /* CppProgram.cpp */; };
+		5D899F101A72074300D05772 /* CCInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D899F0E1A72074300D05772 /* CCInterface.cpp */; };
+		5D899F131A72077600D05772 /* SerialPort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D899F111A72077600D05772 /* SerialPort.cpp */; };
+		5DD76C611A75E7A3008F16E7 /* CppPatientReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD76C5F1A75E7A3008F16E7 /* CppPatientReader.cpp */; };
+		5DD7C1351A7C59BE00292DB1 /* CppPatientNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7C1331A7C59BE00292DB1 /* CppPatientNote.cpp */; };
+		5DD8511D1A3D448A00021613 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8511C1A3D448A00021613 /* AppDelegate.mm */; };
+		5DD8511F1A3D448A00021613 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8511E1A3D448A00021613 /* main.m */; };
+		5DD851211A3D448A00021613 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD851201A3D448A00021613 /* Images.xcassets */; };
+		5DD851241A3D448A00021613 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD851221A3D448A00021613 /* MainMenu.xib */; };
+		5DD851301A3D448A00021613 /* CustomCareGuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8512F1A3D448A00021613 /* CustomCareGuiTests.m */; };
+		5DD885C71A8868CB00011930 /* PrintController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD885C51A8868CB00011930 /* PrintController.m */; };
+		5DD885C81A8868CB00011930 /* PrintController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD885C61A8868CB00011930 /* PrintController.xib */; };
+		5DD8A8761A5B9161006FB644 /* CsvReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8A8741A5B9161006FB644 /* CsvReader.cpp */; };
+		5DD8A87A1A5B9186006FB644 /* ProtocolBankController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8A8781A5B9186006FB644 /* ProtocolBankController.mm */; };
+		5DD8A87B1A5B9186006FB644 /* ProtocolBankController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD8A8791A5B9186006FB644 /* ProtocolBankController.xib */; };
+		5DD8A8851A5B91AD006FB644 /* Polarity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8A87D1A5B91AD006FB644 /* Polarity.m */; };
+		5DD8A8861A5B91AD006FB644 /* ProtocolEditorController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8A87F1A5B91AD006FB644 /* ProtocolEditorController.mm */; };
+		5DD8A8871A5B91AD006FB644 /* ProtocolProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8A8811A5B91AD006FB644 /* ProtocolProgram.m */; };
+		5DD8A8881A5B91AD006FB644 /* ProtocolWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD8A8821A5B91AD006FB644 /* ProtocolWindow.xib */; };
+		5DD8A8891A5B91AD006FB644 /* Waveshape.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8A8841A5B91AD006FB644 /* Waveshape.m */; };
+		5DD91FA41A8706EF009ECBB4 /* BankEditorController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DD91FA01A8706EF009ECBB4 /* BankEditorController.mm */; };
+		5DD91FA51A8706EF009ECBB4 /* BankEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD91FA11A8706EF009ECBB4 /* BankEditorController.xib */; };
+		5DD9558C1A53AB0600E8EA31 /* CustomBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9558B1A53AB0600E8EA31 /* CustomBox.m */; };
+		5DD972A11A70B3B700A19C63 /* CppPatient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9729F1A70B3B700A19C63 /* CppPatient.cpp */; };
+		5DD972A51A70B73B00A19C63 /* CppDate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD972A31A70B73B00A19C63 /* CppDate.cpp */; };
+		5DD972A81A70BAD700A19C63 /* CppPatientWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD972A61A70BAD700A19C63 /* CppPatientWriter.cpp */; };
+		5DDDEFC71A4F9CD600ECDE78 /* PatientEditorController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDEFC31A4F9CD600ECDE78 /* PatientEditorController.mm */; };
+		5DDDEFC81A4F9CD600ECDE78 /* PatientEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DDDEFC41A4F9CD600ECDE78 /* PatientEditorController.xib */; };
+		5DDDEFC91A4F9CD600ECDE78 /* PatientNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDEFC61A4F9CD600ECDE78 /* PatientNote.m */; };
+		5DDDEFDC1A4F9E3400ECDE78 /* ProgramUnitController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDEFDA1A4F9E3400ECDE78 /* ProgramUnitController.mm */; };
+		5DDDEFDD1A4F9E3400ECDE78 /* ProgramUnitController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DDDEFDB1A4F9E3400ECDE78 /* ProgramUnitController.xib */; };
+		5DDE92DE1A48E95600F2CC02 /* TreatmentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE92DD1A48E95600F2CC02 /* TreatmentProtocol.m */; };
+		5DDE92E11A492D4A00F2CC02 /* Patient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE92E01A492D4A00F2CC02 /* Patient.mm */; };
+		5DE255391A6B5BAE001DABC6 /* CppProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DE255371A6B5BAE001DABC6 /* CppProtocol.cpp */; };
+		5DE64DF81A68C55400E541CD /* button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE64DF71A68C55400E541CD /* button_pressed.png */; };
+		5DE64DFA1A68C55E00E541CD /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE64DF91A68C55E00E541CD /* button.png */; };
+		5DE64E021A68DC8200E541CD /* button-6222.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE64E011A68DC8200E541CD /* button-6222.png */; };
+		5DE64E041A68DD4A00E541CD /* button-3499.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE64E031A68DD4A00E541CD /* button-3499.png */; };
+		5DE73A401AAD4A8C00028EC0 /* KeyDownTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE73A3F1AAD4A8C00028EC0 /* KeyDownTableView.m */; };
+		5DE861361A9446FE00C3D3E1 /* CsvWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DE861341A9446FE00C3D3E1 /* CsvWriter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DD8512A1A3D448A00021613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD8510E1A3D448A00021613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DD851151A3D448A00021613;
+			remoteInfo = CustomCareGui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D0168A81A64DCFA00419A32 /* CppProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppProgram.cpp; path = ProtocolBank/CppProgram.cpp; sourceTree = "<group>"; };
+		5D0168A91A64DCFA00419A32 /* CppProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppProgram.h; path = ProtocolBank/CppProgram.h; sourceTree = "<group>"; };
+		5D899F0D1A72074300D05772 /* CCCmdStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCCmdStrings.h; path = ProgramUnit/CCCmdStrings.h; sourceTree = "<group>"; };
+		5D899F0E1A72074300D05772 /* CCInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCInterface.cpp; path = ProgramUnit/CCInterface.cpp; sourceTree = "<group>"; };
+		5D899F0F1A72074300D05772 /* CCInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCInterface.h; path = ProgramUnit/CCInterface.h; sourceTree = "<group>"; };
+		5D899F111A72077600D05772 /* SerialPort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SerialPort.cpp; path = ProgramUnit/SerialPort.cpp; sourceTree = "<group>"; };
+		5D899F121A72077600D05772 /* SerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerialPort.h; path = ProgramUnit/SerialPort.h; sourceTree = "<group>"; };
+		5DD76C5F1A75E7A3008F16E7 /* CppPatientReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppPatientReader.cpp; path = DataBase/CppPatientReader.cpp; sourceTree = "<group>"; };
+		5DD76C601A75E7A3008F16E7 /* CppPatientReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppPatientReader.h; path = DataBase/CppPatientReader.h; sourceTree = "<group>"; };
+		5DD7C1331A7C59BE00292DB1 /* CppPatientNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppPatientNote.cpp; path = DataBase/CppPatientNote.cpp; sourceTree = "<group>"; };
+		5DD7C1341A7C59BE00292DB1 /* CppPatientNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppPatientNote.h; path = DataBase/CppPatientNote.h; sourceTree = "<group>"; };
+		5DD851161A3D448A00021613 /* CustomCareGui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCareGui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD8511A1A3D448A00021613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD8511B1A3D448A00021613 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DD8511C1A3D448A00021613 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		5DD8511E1A3D448A00021613 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DD851201A3D448A00021613 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CustomCareGui/Images.xcassets; sourceTree = "<group>"; };
+		5DD851231A3D448A00021613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5DD851291A3D448A00021613 /* CustomCareGuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCareGuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD8512E1A3D448A00021613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD8512F1A3D448A00021613 /* CustomCareGuiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCareGuiTests.m; sourceTree = "<group>"; };
+		5DD885C41A8868CB00011930 /* PrintController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrintController.h; path = CustomCareGui/PrintController/PrintController.h; sourceTree = "<group>"; };
+		5DD885C51A8868CB00011930 /* PrintController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrintController.m; path = CustomCareGui/PrintController/PrintController.m; sourceTree = "<group>"; };
+		5DD885C61A8868CB00011930 /* PrintController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrintController.xib; path = CustomCareGui/PrintController/PrintController.xib; sourceTree = "<group>"; };
+		5DD8A8741A5B9161006FB644 /* CsvReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CsvReader.cpp; path = ProtocolBank/CsvReader.cpp; sourceTree = "<group>"; };
+		5DD8A8751A5B9161006FB644 /* CsvReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CsvReader.h; path = ProtocolBank/CsvReader.h; sourceTree = "<group>"; };
+		5DD8A8771A5B9186006FB644 /* ProtocolBankController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocolBankController.h; path = ProtocolBank/ProtocolBankController.h; sourceTree = "<group>"; };
+		5DD8A8781A5B9186006FB644 /* ProtocolBankController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ProtocolBankController.mm; path = ProtocolBank/ProtocolBankController.mm; sourceTree = "<group>"; };
+		5DD8A8791A5B9186006FB644 /* ProtocolBankController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProtocolBankController.xib; path = ProtocolBank/ProtocolBankController.xib; sourceTree = "<group>"; };
+		5DD8A87C1A5B91AD006FB644 /* Polarity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Polarity.h; path = CustomCareGui/ProtocolEditor/Polarity.h; sourceTree = SOURCE_ROOT; };
+		5DD8A87D1A5B91AD006FB644 /* Polarity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Polarity.m; path = CustomCareGui/ProtocolEditor/Polarity.m; sourceTree = SOURCE_ROOT; };
+		5DD8A87E1A5B91AD006FB644 /* ProtocolEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocolEditorController.h; path = CustomCareGui/ProtocolEditor/ProtocolEditorController.h; sourceTree = SOURCE_ROOT; };
+		5DD8A87F1A5B91AD006FB644 /* ProtocolEditorController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ProtocolEditorController.mm; path = CustomCareGui/ProtocolEditor/ProtocolEditorController.mm; sourceTree = SOURCE_ROOT; };
+		5DD8A8801A5B91AD006FB644 /* ProtocolProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocolProgram.h; path = CustomCareGui/ProtocolEditor/ProtocolProgram.h; sourceTree = SOURCE_ROOT; };
+		5DD8A8811A5B91AD006FB644 /* ProtocolProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtocolProgram.m; path = CustomCareGui/ProtocolEditor/ProtocolProgram.m; sourceTree = SOURCE_ROOT; };
+		5DD8A8821A5B91AD006FB644 /* ProtocolWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProtocolWindow.xib; path = CustomCareGui/ProtocolEditor/ProtocolWindow.xib; sourceTree = SOURCE_ROOT; };
+		5DD8A8831A5B91AD006FB644 /* Waveshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Waveshape.h; path = CustomCareGui/ProtocolEditor/Waveshape.h; sourceTree = SOURCE_ROOT; };
+		5DD8A8841A5B91AD006FB644 /* Waveshape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Waveshape.m; path = CustomCareGui/ProtocolEditor/Waveshape.m; sourceTree = SOURCE_ROOT; };
+		5DD91F9F1A8706EF009ECBB4 /* BankEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BankEditorController.h; path = BankEditor/BankEditorController.h; sourceTree = "<group>"; };
+		5DD91FA01A8706EF009ECBB4 /* BankEditorController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BankEditorController.mm; path = BankEditor/BankEditorController.mm; sourceTree = "<group>"; };
+		5DD91FA11A8706EF009ECBB4 /* BankEditorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BankEditorController.xib; path = BankEditor/BankEditorController.xib; sourceTree = "<group>"; };
+		5DD9558A1A53AAF000E8EA31 /* CustomBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBox.h; sourceTree = "<group>"; };
+		5DD9558B1A53AB0600E8EA31 /* CustomBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBox.m; sourceTree = "<group>"; };
+		5DD9729F1A70B3B700A19C63 /* CppPatient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppPatient.cpp; path = DataBase/CppPatient.cpp; sourceTree = "<group>"; };
+		5DD972A01A70B3B700A19C63 /* CppPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppPatient.h; path = DataBase/CppPatient.h; sourceTree = "<group>"; };
+		5DD972A31A70B73B00A19C63 /* CppDate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppDate.cpp; path = DataBase/CppDate.cpp; sourceTree = "<group>"; };
+		5DD972A41A70B73B00A19C63 /* CppDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppDate.h; path = DataBase/CppDate.h; sourceTree = "<group>"; };
+		5DD972A61A70BAD700A19C63 /* CppPatientWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppPatientWriter.cpp; path = DataBase/CppPatientWriter.cpp; sourceTree = "<group>"; };
+		5DD972A71A70BAD700A19C63 /* CppPatientWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppPatientWriter.h; path = DataBase/CppPatientWriter.h; sourceTree = "<group>"; };
+		5DDDEFC21A4F9CD600ECDE78 /* PatientEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientEditorController.h; sourceTree = "<group>"; };
+		5DDDEFC31A4F9CD600ECDE78 /* PatientEditorController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PatientEditorController.mm; sourceTree = "<group>"; };
+		5DDDEFC41A4F9CD600ECDE78 /* PatientEditorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientEditorController.xib; sourceTree = "<group>"; };
+		5DDDEFC51A4F9CD600ECDE78 /* PatientNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientNote.h; sourceTree = "<group>"; };
+		5DDDEFC61A4F9CD600ECDE78 /* PatientNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientNote.m; sourceTree = "<group>"; };
+		5DDDEFD91A4F9E3400ECDE78 /* ProgramUnitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramUnitController.h; path = ProgramUnit/ProgramUnitController.h; sourceTree = "<group>"; };
+		5DDDEFDA1A4F9E3400ECDE78 /* ProgramUnitController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ProgramUnitController.mm; path = ProgramUnit/ProgramUnitController.mm; sourceTree = "<group>"; };
+		5DDDEFDB1A4F9E3400ECDE78 /* ProgramUnitController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramUnitController.xib; path = ProgramUnit/ProgramUnitController.xib; sourceTree = "<group>"; };
+		5DDE92DC1A48E95600F2CC02 /* TreatmentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentProtocol.h; sourceTree = "<group>"; };
+		5DDE92DD1A48E95600F2CC02 /* TreatmentProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentProtocol.m; sourceTree = "<group>"; };
+		5DDE92DF1A492D4A00F2CC02 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		5DDE92E01A492D4A00F2CC02 /* Patient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Patient.mm; sourceTree = "<group>"; };
+		5DE255371A6B5BAE001DABC6 /* CppProtocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CppProtocol.cpp; path = ProtocolBank/CppProtocol.cpp; sourceTree = "<group>"; };
+		5DE255381A6B5BAE001DABC6 /* CppProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CppProtocol.h; path = ProtocolBank/CppProtocol.h; sourceTree = "<group>"; };
+		5DE64DF71A68C55400E541CD /* button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_pressed.png; sourceTree = "<group>"; };
+		5DE64DF91A68C55E00E541CD /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		5DE64E011A68DC8200E541CD /* button-6222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-6222.png"; sourceTree = "<group>"; };
+		5DE64E031A68DD4A00E541CD /* button-3499.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-3499.png"; sourceTree = "<group>"; };
+		5DE73A3E1AAD4A8C00028EC0 /* KeyDownTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyDownTableView.h; sourceTree = "<group>"; };
+		5DE73A3F1AAD4A8C00028EC0 /* KeyDownTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyDownTableView.m; sourceTree = "<group>"; };
+		5DE861341A9446FE00C3D3E1 /* CsvWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CsvWriter.cpp; path = ProtocolBank/CsvWriter.cpp; sourceTree = "<group>"; };
+		5DE861351A9446FE00C3D3E1 /* CsvWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CsvWriter.h; path = ProtocolBank/CsvWriter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DD851131A3D448A00021613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD851261A3D448A00021613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DD485761A830FF100CB3852 /* BankEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5DD91F9F1A8706EF009ECBB4 /* BankEditorController.h */,
+				5DD91FA01A8706EF009ECBB4 /* BankEditorController.mm */,
+				5DD91FA11A8706EF009ECBB4 /* BankEditorController.xib */,
+			);
+			name = BankEditor;
+			sourceTree = "<group>";
+		};
+		5DD8510D1A3D448A00021613 = {
+			isa = PBXGroup;
+			children = (
+				5DD851181A3D448A00021613 /* CustomCareGui */,
+				5DD851201A3D448A00021613 /* Images.xcassets */,
+				5DD8512C1A3D448A00021613 /* CustomCareGuiTests */,
+				5DD851171A3D448A00021613 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DD851171A3D448A00021613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DD851161A3D448A00021613 /* CustomCareGui.app */,
+				5DD851291A3D448A00021613 /* CustomCareGuiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DD851181A3D448A00021613 /* CustomCareGui */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8511B1A3D448A00021613 /* AppDelegate.h */,
+				5DD8511C1A3D448A00021613 /* AppDelegate.mm */,
+				5DE73A3E1AAD4A8C00028EC0 /* KeyDownTableView.h */,
+				5DE73A3F1AAD4A8C00028EC0 /* KeyDownTableView.m */,
+				5DD9558B1A53AB0600E8EA31 /* CustomBox.m */,
+				5DD9558A1A53AAF000E8EA31 /* CustomBox.h */,
+				5DDE92DF1A492D4A00F2CC02 /* Patient.h */,
+				5DDE92E01A492D4A00F2CC02 /* Patient.mm */,
+				5DDE92DC1A48E95600F2CC02 /* TreatmentProtocol.h */,
+				5DDE92DD1A48E95600F2CC02 /* TreatmentProtocol.m */,
+				5DD851221A3D448A00021613 /* MainMenu.xib */,
+				5DD485761A830FF100CB3852 /* BankEditor */,
+				5DD972A21A70B3CE00A19C63 /* DataBase */,
+				5DD885C91A8868E000011930 /* PrintController */,
+				5DE09C571A57AA2900CBAF3E /* ProtocolBank */,
+				5DDDEFCA1A4F9DEA00ECDE78 /* ProtocolEditor */,
+				5DDDEFDE1A4F9E4500ECDE78 /* ProgramUnit */,
+				5DDDEFC11A4F9CD600ECDE78 /* PatientEditor */,
+				5DD851191A3D448A00021613 /* Supporting Files */,
+			);
+			path = CustomCareGui;
+			sourceTree = "<group>";
+		};
+		5DD851191A3D448A00021613 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DE64E031A68DD4A00E541CD /* button-3499.png */,
+				5DE64E011A68DC8200E541CD /* button-6222.png */,
+				5DE64DF91A68C55E00E541CD /* button.png */,
+				5DE64DF71A68C55400E541CD /* button_pressed.png */,
+				5DD8511A1A3D448A00021613 /* Info.plist */,
+				5DD8511E1A3D448A00021613 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DD8512C1A3D448A00021613 /* CustomCareGuiTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8512F1A3D448A00021613 /* CustomCareGuiTests.m */,
+				5DD8512D1A3D448A00021613 /* Supporting Files */,
+			);
+			path = CustomCareGuiTests;
+			sourceTree = "<group>";
+		};
+		5DD8512D1A3D448A00021613 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8512E1A3D448A00021613 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DD885C91A8868E000011930 /* PrintController */ = {
+			isa = PBXGroup;
+			children = (
+				5DD885C41A8868CB00011930 /* PrintController.h */,
+				5DD885C51A8868CB00011930 /* PrintController.m */,
+				5DD885C61A8868CB00011930 /* PrintController.xib */,
+			);
+			name = PrintController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5DD972A21A70B3CE00A19C63 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				5DD972A01A70B3B700A19C63 /* CppPatient.h */,
+				5DD9729F1A70B3B700A19C63 /* CppPatient.cpp */,
+				5DD7C1341A7C59BE00292DB1 /* CppPatientNote.h */,
+				5DD7C1331A7C59BE00292DB1 /* CppPatientNote.cpp */,
+				5DD76C601A75E7A3008F16E7 /* CppPatientReader.h */,
+				5DD76C5F1A75E7A3008F16E7 /* CppPatientReader.cpp */,
+				5DD972A71A70BAD700A19C63 /* CppPatientWriter.h */,
+				5DD972A61A70BAD700A19C63 /* CppPatientWriter.cpp */,
+				5DD972A41A70B73B00A19C63 /* CppDate.h */,
+				5DD972A31A70B73B00A19C63 /* CppDate.cpp */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
+		5DDDEFC11A4F9CD600ECDE78 /* PatientEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5DDDEFC21A4F9CD600ECDE78 /* PatientEditorController.h */,
+				5DDDEFC31A4F9CD600ECDE78 /* PatientEditorController.mm */,
+				5DDDEFC41A4F9CD600ECDE78 /* PatientEditorController.xib */,
+				5DDDEFC51A4F9CD600ECDE78 /* PatientNote.h */,
+				5DDDEFC61A4F9CD600ECDE78 /* PatientNote.m */,
+			);
+			path = PatientEditor;
+			sourceTree = "<group>";
+		};
+		5DDDEFCA1A4F9DEA00ECDE78 /* ProtocolEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8A87C1A5B91AD006FB644 /* Polarity.h */,
+				5DD8A87D1A5B91AD006FB644 /* Polarity.m */,
+				5DD8A87E1A5B91AD006FB644 /* ProtocolEditorController.h */,
+				5DD8A87F1A5B91AD006FB644 /* ProtocolEditorController.mm */,
+				5DD8A8801A5B91AD006FB644 /* ProtocolProgram.h */,
+				5DD8A8811A5B91AD006FB644 /* ProtocolProgram.m */,
+				5DD8A8831A5B91AD006FB644 /* Waveshape.h */,
+				5DD8A8841A5B91AD006FB644 /* Waveshape.m */,
+				5DD8A8821A5B91AD006FB644 /* ProtocolWindow.xib */,
+			);
+			name = ProtocolEditor;
+			path = ModeEditor;
+			sourceTree = "<group>";
+		};
+		5DDDEFDE1A4F9E4500ECDE78 /* ProgramUnit */ = {
+			isa = PBXGroup;
+			children = (
+				5D899F111A72077600D05772 /* SerialPort.cpp */,
+				5D899F121A72077600D05772 /* SerialPort.h */,
+				5D899F0D1A72074300D05772 /* CCCmdStrings.h */,
+				5D899F0E1A72074300D05772 /* CCInterface.cpp */,
+				5D899F0F1A72074300D05772 /* CCInterface.h */,
+				5DDDEFD91A4F9E3400ECDE78 /* ProgramUnitController.h */,
+				5DDDEFDA1A4F9E3400ECDE78 /* ProgramUnitController.mm */,
+				5DDDEFDB1A4F9E3400ECDE78 /* ProgramUnitController.xib */,
+			);
+			name = ProgramUnit;
+			sourceTree = "<group>";
+		};
+		5DE09C571A57AA2900CBAF3E /* ProtocolBank */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8A8751A5B9161006FB644 /* CsvReader.h */,
+				5DD8A8741A5B9161006FB644 /* CsvReader.cpp */,
+				5DE861351A9446FE00C3D3E1 /* CsvWriter.h */,
+				5DE861341A9446FE00C3D3E1 /* CsvWriter.cpp */,
+				5D0168A91A64DCFA00419A32 /* CppProgram.h */,
+				5D0168A81A64DCFA00419A32 /* CppProgram.cpp */,
+				5DE255381A6B5BAE001DABC6 /* CppProtocol.h */,
+				5DE255371A6B5BAE001DABC6 /* CppProtocol.cpp */,
+				5DD8A8771A5B9186006FB644 /* ProtocolBankController.h */,
+				5DD8A8781A5B9186006FB644 /* ProtocolBankController.mm */,
+				5DD8A8791A5B9186006FB644 /* ProtocolBankController.xib */,
+			);
+			name = ProtocolBank;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DD851151A3D448A00021613 /* CustomCareGui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD851331A3D448A00021613 /* Build configuration list for PBXNativeTarget "CustomCareGui" */;
+			buildPhases = (
+				5DD851121A3D448A00021613 /* Sources */,
+				5DD851131A3D448A00021613 /* Frameworks */,
+				5DD851141A3D448A00021613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomCareGui;
+			productName = CustomCareGui;
+			productReference = 5DD851161A3D448A00021613 /* CustomCareGui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DD851281A3D448A00021613 /* CustomCareGuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD851361A3D448A00021613 /* Build configuration list for PBXNativeTarget "CustomCareGuiTests" */;
+			buildPhases = (
+				5DD851251A3D448A00021613 /* Sources */,
+				5DD851261A3D448A00021613 /* Frameworks */,
+				5DD851271A3D448A00021613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DD8512B1A3D448A00021613 /* PBXTargetDependency */,
+			);
+			name = CustomCareGuiTests;
+			productName = CustomCareGuiTests;
+			productReference = 5DD851291A3D448A00021613 /* CustomCareGuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DD8510E1A3D448A00021613 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = MarkFrank;
+				TargetAttributes = {
+					5DD851151A3D448A00021613 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 78EMQA5847;
+					};
+					5DD851281A3D448A00021613 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 5DD851151A3D448A00021613;
+					};
+				};
+			};
+			buildConfigurationList = 5DD851111A3D448A00021613 /* Build configuration list for PBXProject "CustomCareGui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DD8510D1A3D448A00021613;
+			productRefGroup = 5DD851171A3D448A00021613 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DD851151A3D448A00021613 /* CustomCareGui */,
+				5DD851281A3D448A00021613 /* CustomCareGuiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DD851141A3D448A00021613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDDEFDD1A4F9E3400ECDE78 /* ProgramUnitController.xib in Resources */,
+				5DD91FA51A8706EF009ECBB4 /* BankEditorController.xib in Resources */,
+				5DE64DFA1A68C55E00E541CD /* button.png in Resources */,
+				5DD851211A3D448A00021613 /* Images.xcassets in Resources */,
+				5DD8A87B1A5B9186006FB644 /* ProtocolBankController.xib in Resources */,
+				5DD885C81A8868CB00011930 /* PrintController.xib in Resources */,
+				5DD851241A3D448A00021613 /* MainMenu.xib in Resources */,
+				5DE64E041A68DD4A00E541CD /* button-3499.png in Resources */,
+				5DDDEFC81A4F9CD600ECDE78 /* PatientEditorController.xib in Resources */,
+				5DE64DF81A68C55400E541CD /* button_pressed.png in Resources */,
+				5DD8A8881A5B91AD006FB644 /* ProtocolWindow.xib in Resources */,
+				5DE64E021A68DC8200E541CD /* button-6222.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD851271A3D448A00021613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DD851121A3D448A00021613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD76C611A75E7A3008F16E7 /* CppPatientReader.cpp in Sources */,
+				5DD972A11A70B3B700A19C63 /* CppPatient.cpp in Sources */,
+				5DD972A51A70B73B00A19C63 /* CppDate.cpp in Sources */,
+				5DE73A401AAD4A8C00028EC0 /* KeyDownTableView.m in Sources */,
+				5DD8511F1A3D448A00021613 /* main.m in Sources */,
+				5DDE92E11A492D4A00F2CC02 /* Patient.mm in Sources */,
+				5DD7C1351A7C59BE00292DB1 /* CppPatientNote.cpp in Sources */,
+				5DD91FA41A8706EF009ECBB4 /* BankEditorController.mm in Sources */,
+				5DDDEFC71A4F9CD600ECDE78 /* PatientEditorController.mm in Sources */,
+				5DDE92DE1A48E95600F2CC02 /* TreatmentProtocol.m in Sources */,
+				5DD8A8761A5B9161006FB644 /* CsvReader.cpp in Sources */,
+				5DE255391A6B5BAE001DABC6 /* CppProtocol.cpp in Sources */,
+				5D899F131A72077600D05772 /* SerialPort.cpp in Sources */,
+				5DDDEFDC1A4F9E3400ECDE78 /* ProgramUnitController.mm in Sources */,
+				5DD885C71A8868CB00011930 /* PrintController.m in Sources */,
+				5DE861361A9446FE00C3D3E1 /* CsvWriter.cpp in Sources */,
+				5DD8A8861A5B91AD006FB644 /* ProtocolEditorController.mm in Sources */,
+				5DD8511D1A3D448A00021613 /* AppDelegate.mm in Sources */,
+				5DDDEFC91A4F9CD600ECDE78 /* PatientNote.m in Sources */,
+				5DD972A81A70BAD700A19C63 /* CppPatientWriter.cpp in Sources */,
+				5DD8A87A1A5B9186006FB644 /* ProtocolBankController.mm in Sources */,
+				5DD8A8891A5B91AD006FB644 /* Waveshape.m in Sources */,
+				5D899F101A72074300D05772 /* CCInterface.cpp in Sources */,
+				5DD8A8851A5B91AD006FB644 /* Polarity.m in Sources */,
+				5DD9558C1A53AB0600E8EA31 /* CustomBox.m in Sources */,
+				5DD8A8871A5B91AD006FB644 /* ProtocolProgram.m in Sources */,
+				5D0168AA1A64DCFA00419A32 /* CppProgram.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD851251A3D448A00021613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD851301A3D448A00021613 /* CustomCareGuiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DD8512B1A3D448A00021613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DD851151A3D448A00021613 /* CustomCareGui */;
+			targetProxy = 5DD8512A1A3D448A00021613 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DD851221A3D448A00021613 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DD851231A3D448A00021613 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DD851311A3D448A00021613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5DD851321A3D448A00021613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5DD851341A3D448A00021613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomCareGui/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarkFrank.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+			};
+			name = Debug;
+		};
+		5DD851351A3D448A00021613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomCareGui/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarkFrank.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+			};
+			name = Release;
+		};
+		5DD851371A3D448A00021613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomCareGuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarkFrank.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCareGui.app/Contents/MacOS/CustomCareGui";
+			};
+			name = Debug;
+		};
+		5DD851381A3D448A00021613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomCareGuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarkFrank.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCareGui.app/Contents/MacOS/CustomCareGui";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DD851111A3D448A00021613 /* Build configuration list for PBXProject "CustomCareGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD851311A3D448A00021613 /* Debug */,
+				5DD851321A3D448A00021613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD851331A3D448A00021613 /* Build configuration list for PBXNativeTarget "CustomCareGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD851341A3D448A00021613 /* Debug */,
+				5DD851351A3D448A00021613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD851361A3D448A00021613 /* Build configuration list for PBXNativeTarget "CustomCareGuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD851371A3D448A00021613 /* Debug */,
+				5DD851381A3D448A00021613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DD8510E1A3D448A00021613 /* Project object */;
+}
